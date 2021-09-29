@@ -1,23 +1,28 @@
 h1 {
   color: white;
   font-size: 65px;
-  padding: 100px;
-  margin-left: 750px;
+  margin: auto;
+  text-align: center;
 }
 
 body{
+  margin: auto;
   background: rgb(77,158,177);
 background: radial-gradient(circle, rgba(77,158,177,1) 27%, rgba(9,75,226,1) 84%, rgba(0,0,0,1) 88%);
 }
 .klara {
+  margin: auto;
   text-decoration: line-through;
   color: rgb(0, 255, 34);
   cursor: pointer;
 }
 
 .trashcan {
+
+  margin-left: 10px;
+  
   font-size: 20px;
-  margin-left: 15px;
+  
   cursor: pointer;
 }
 .trashcan:hover{
@@ -29,23 +34,29 @@ background: radial-gradient(circle, rgba(77,158,177,1) 27%, rgba(9,75,226,1) 84%
   transition: all 0.0s ease 0s;
 }
 ul {
+  margin-left:39%;
+
   color: rgb(0, 0, 0);
   font-size: 25px;
-  margin-left: 950px;
   font-weight: bold;
-
 }
 
 p {
+  margin-left: 40%;
   color: black;
   font-size: 20px;
-  margin-left: 950px;
+ 
+  
   font-weight: bold;
 }
 
 button {
+  
+  left: 1050px;
+
   padding: 10px 10px;
   margin: 5px;
+  
 }
 .knapp:hover {
   background: #1eff00;
@@ -57,11 +68,14 @@ button {
 }
 
 input {
+  margin-left: 40%;
   width: 20%;
   padding: 12px 20px;
-  margin: 12px 0;
-  margin-left: 950px;
+  
+  
   box-sizing: border-box;
   font-size: 18px;
-  
+   
+
 }
+
