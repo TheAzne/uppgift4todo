@@ -1,0 +1,194 @@
+h1 {
+  font-family: bold;
+  animation: fade 2s forwards;
+}
+
+#complete{
+  animation: fade 2s forwards;
+}
+
+.knapp {
+  font-size: 18px;
+  margin-left: 3px;
+  animation: fade 2s forwards;
+}
+
+input {
+  margin: 0 auto;
+  margin-left: 40px;
+  padding: 5px;
+  padding-right: 50px;
+  animation: fade 2s forwards;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#f3bdbd, #f0352f);
+  background-size: auto;
+  height: 1150px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+#warning {
+  font-style: italic;
+  animation: blinker 0.4s 1;
+  color: rgb(233, 45, 45);
+  opacity: 0;
+  font-size: 12px;
+}
+
+#warning.animateVisible{
+  display: block;
+  animation: 1s both animation;
+}
+
+@keyframes animation {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 1;
+  }
+  40% {
+      opacity: 0;
+  }
+  60% {
+      opacity: 1;
+  }
+  80% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+  
+.wholeCake {
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+  width: 500px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 15px;
+  animation: slideDown 1s;
+  
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0, -50px);
+}
+50% {
+    transform: translateY(50px);
+}
+100% {
+    transform: translateY(0);
+    
+}
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 10px 10px 10p;
+  cursor: pointer;
+  
+}
+
+li span:nth-child(1){
+  margin: 10px 0;
+  color: black;
+  font-size: 20px;
+  animation: slideUp 0.5s forwards;
+}
+
+li span:nth-child(1):hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  color: gray;
+}
+li span:nth-child(2){
+  color: gray;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+li span:nth-child(2):hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+
+.klara span:nth-child(1) {
+  text-decoration: line-through black;
+  animation: fadeOut 400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+
+
+.trashcan {
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+
+
+span {
+  display: inline;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    
+  }
+
+  50% {
+    opacity: 0.0;
+    
+  }
+  80% {
+    opacity: 0.1;
+    
+  }
+  100% {
+    opacity: 1;
+    
+  }
+
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translate(0,50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    
+  }
+
+}

@@ -2,24 +2,26 @@
 <html lang="en-gb">
   <head>
     <meta charset="UTF-8" />
-    <title>Uppgift 4</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Uppgift todo</title>
+    <link rel="stylesheet" href="animate.css" /> 
+    
   </head>
 
+  <div class="wholeCake">
   <body class="wrapper">
-    <h1>Välkommen till ToDo-appen</h1>
+    <h1>My ToDO</h1>
 
-    <div><p>Idag ska vi bocka av massor med saker!!</p></div>
+    <div id=complete><p>0 completed</p></div>
    
 
     <label for="input1" ></label>
-    <input type="text" name="input1"placeholder="Här skriver du" pattern="^\d*[a-zA-Z][a-zA-Z0-9]*$" required/>
+    <input type="text" name="input1" pattern="^\d*[a-zA-Z][a-zA-Z0-9]*$" required/>
     <button class="knapp">OK</button>
 
-    <small></small>
+    <p id="warning"></p>
 
     <ul></ul>
-
+    </div>
 
 
     <script src="app.js"></script>

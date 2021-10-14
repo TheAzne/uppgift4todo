@@ -5,7 +5,7 @@ let completedCount = 0;
 const input = document.querySelector("input");
 const btn = document.querySelector("button");
 const lista = document.querySelector("ul");
-const info = document.querySelector("small");
+const warning = document.querySelector("#warning");
 const label = document.querySelector("p");
 const array = [];
 
@@ -21,10 +21,12 @@ function addToDo () {
 
     //Om man inte skriver något och bara trycker "ok", så ska man få ett meddelande
     if (text.length == 0) {
-      info.innerText = "Du måste skriva något";
+      warning.innerText = "Input must not be empty";
+      warning.classList.add('animateVisible');
       return;
     } else {
-      info.innerText = "";
+      warning.innerText = "";
+      warning.classList.remove('animateVisible');
     }
 
     //Text läggs till i vår lista, allså "ul" lista.
@@ -51,7 +53,7 @@ function addToDo () {
           completedCount++;
         }
 
-        label.innerText = `Du har klarat av: ${completedCount} `;
+        label.innerText = ` ${completedCount} completed `;
       },
       false
     );
